@@ -1,0 +1,3 @@
+steps:
+- name: gcr.io/cloud-builders/gcloud
+  args: ['beta', 'functions', 'deploy', 'blogapi', '--source-url', 'https://source.developers.google.com/p/sd-cf-rest-test-1/r/comments-service', '--source-path', '/', '--trigger-http']
